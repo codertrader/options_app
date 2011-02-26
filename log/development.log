@@ -8662,3 +8662,11 @@ DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>
 Rendered option_models/_form.html.erb (373.0ms)
 Rendered option_models/index.html.erb within layouts/application (391.0ms)
 Completed 200 OK in 438ms (Views: 412.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 26 17:16:44 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2348_2700 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (651.0ms)
+Rendered option_models/index.html.erb within layouts/application (672.0ms)
+Completed 200 OK in 827ms (Views: 692.0ms)
