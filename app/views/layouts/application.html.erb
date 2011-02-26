@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OptionsApp</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div id="bg1">
+	<div id="header">
+		<h1><a href="#">OptionViz<sup>1.0</sup></a></h1>
+
+		<h2>By <a href="http://www.twitter.com/CoderTrader">CoderTrader</a> :: <a href="mailto:jrubyist@gmail.com">Dan Tylenda-Emmons</a></h2>
+	</div>
+	<!-- end #header -->
+</div>
+<!-- end #bg1 -->
+<div id="bg2">
+	<div id="header2">
+		<div id="menu">
+			<ul>
+				<li><a href="#">Option::Calculator</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+		<!--div id="search">
+			<form method="get" action="#">
+				<fieldset>
+				<input type="text" name="q" value="search keywords" id="q" class="text" />
+				<input type="submit" value="Search" class="button" />
+				</fieldset>
+
+			</form>
+		</div-->
+		<!-- end #search -->
+	</div>
+	<!-- end #header2 -->
+</div>
+<!-- end #bg2 -->
+<div id="bg3">
+	<div id="bg4">
+		<div id="bg5">
+
+			<div id="page">
+				<div id="content">
+					<div class="post">
+						<div class="title">
+							<h2><a href="#">Option::Calculator</a><p>1.0.3</p></h2>
+						</div>
+						<div class="entry">
+						<%= yield %>
+
+						</div>
+						<div class="meta">
+							<p class="credit">Created by <a href="#">Dan Tylenda-Emmons</a> on February 20, 2011</p>
+							<div class="links"><a href="#" class="more">Read more</a></div>
+						</div>
+					</div>                    
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<h2>#ruby or #jruby usage</h2>
+							<p>require 'rubygems'<br/>
+							   require 'options_library'<br/>
+							   <br/>
+							   call = Option::Call.new<br/>
+							   call.underlying = 95.40<br/>
+						           call.strike = 90<br/>
+							   call.time = 0.015<br/>
+							   call.interest = 0.01<br/>
+						           call.sigma = 0.4875<br/>
+							   call.dividend = 0<br/>
+							   <br/>
+							   price =call.calc_price<br/>
+							   delta =call.calc_delta<br/>
+							   gamma =call.calc_gamma<br/>
+   							   theta =call.calc_theta<br/>
+							   vega  =call.calc_vega<br/>
+							   <br/>
+							   vol=call.implied_vol(price)
+						</li>
+					</ul>
+
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both; height: 0px;">&nbsp;</div>
+			</div>
+			<!-- end #page -->
+		</div>
+	</div>
+</div>
+<!-- end #bg3 -->
+<div id="footer">
+
+	<p>(c) 2011 Dan Tylenda-Emmons.</p>
+</div>
+<!-- end #footer -->
+
+</body>
+</html>

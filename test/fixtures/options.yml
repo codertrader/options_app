@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  symbol: MyString
+  underlying: 
+  strike: 
+  time: 
+  interest: 
+  sigma: 
+  dividend: 
+
+two:
+  symbol: MyString
+  underlying: 
+  strike: 
+  time: 
+  interest: 
+  sigma: 
+  dividend: 

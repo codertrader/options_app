@@ -1,0 +1,545 @@
+body { background-color: #fff; color: white; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   14px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a:hover { color: #fff; }
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.simple_form label {
+  font-size: 140%;
+  float: left;
+  width: 85px;
+  text-align: right;
+  margin: 5px 10px;
+  color: white;
+}
+
+.simple_form label.radio_optional {
+  margin: 0px;
+}
+
+.simple_form label.collection_radio {
+  width: 75px; 
+  margin: 5px 10px 5px 1px;
+  text-align: left;
+}
+
+.simple_form div.input {
+  margin-bottom: 2px;
+  margin-right: 10px;
+  clear: both;
+}
+
+.simple_form div.boolean, .simple_form input[type='submit'] {
+  margin-left: 110px;
+  /*background: url("../images/form_button.gif") repeat-x scroll 0 0 #5ABE00;*/
+  background: #529804;
+  border: 2px solid white;
+  color: #000000;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 16em;
+}
+
+.simple_form div.boolean label {
+  float: none;
+  margin: 0;
+}
+
+.simple_form .error {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #D00;
+  display: block;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 110px;
+  font-size: 12px;
+  color: #B9B9B9;
+  display: block;
+  font-style: italic;
+}
+
+.simple_form #entry {
+    display: inline;
+}
+
+.simple_form div.inputs {
+    width: 300px;
+    float: left;
+}
+
+.simple_form div.outputs {
+    float: right;
+    margin: 0px;    
+}
+
+.simple_form div.outputs label {
+  font-size: 140%;
+  float: left;
+  width: 65px;
+  text-align: right;
+  margin: 5px 10px 5px 0px;
+  color: white;
+}
+
+.simple_form div.actions {
+    clear: both;
+}
+
+.simple_form textarea {
+    height: 125px;
+    overflow: auto;
+}
+
+.simple_form input[type='radio'] {
+    margin: 5px 10px 5px 0px;
+}
+
+.simple_form input[type='text'], input[type='number'], textarea {
+    background: url("../images/form_input.gif") repeat-x scroll 0 0 #282828;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    padding: 5px 3px;
+    font-size: 120%;
+    width: 13em;
+}
+
+.simple_form div.outputs input[type='number'], input[type='text'], textarea {
+    /*background: url("../images/form_input.gif") repeat-x scroll 0 0 #282828;*/
+    background: #816496;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    padding: 5px 3px;
+    font-size: 120%;
+    width: 13em;       
+}
+
+.simple_form fieldset {
+    border-style: none none none;
+    float: left;
+}
+
+.simple_form div.outputs fieldset {
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+    border-color: #B9B9B9;
+    padding-bottom: 5px;
+}
+
+.simple_form .outputs legend {
+    display: inline;
+    font-size: 140%;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 10px;
+}
+
+.simple_form legend {
+    display: none;
+}
+
+.simple_form h3 {
+    display: block;
+    padding: 10px 20px;
+    border-color: #57A700 #57A700;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0;
+}
+
+.simple_form span {
+    /*background: url("../images/form2/form_ico.gif") no-repeat scroll 93% 50% transparent;*/
+    display: block;
+}
+
+.simple_form div.entry {
+    float: left;
+    display: inline;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0px;
+	background: #002F43 url(/images/bg01.jpg) repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #B9B9B9;
+}
+
+h1, h2, h3 {
+	margin-bottom: 0em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, ol {
+	margin-bottom: 1.5em;
+	line-height: 180%;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #8AC800;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong {
+	color: #D7D7D7;
+}
+
+img.left {
+	float: left;
+	margin: 5px 25px 0px 0px;
+}
+
+img.right {
+	float: right;
+	margin: 5px 0px 0px 25px;
+}
+
+/* Background */
+
+#bg1 {
+	background: url(/images/bg02.jpg) no-repeat center top;
+}
+
+#bg2 {
+	background: url(/images/bg03.jpg) no-repeat center top;
+}
+
+#bg3 {
+	background: url(/images/bg04.jpg) repeat-y center top;
+}
+
+#bg4 {
+	background: url(/images/bg05.jpg) no-repeat center top;
+}
+
+#bg5 {
+	background: url(/images/bg06.jpg) no-repeat center bottom;
+}
+
+/* Header */
+
+#header {
+	width: 900px;
+	height: 105px;
+	margin: 0px auto;
+	text-transform: lowercase;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	float: left;
+	margin: 0px;
+	padding: 35px 0px 0px 25px;
+	font-size: 40px;
+}
+
+#header h1 sup {
+	font-weight: normal;
+}
+
+#header h2 {
+	float: right;
+	margin: 0px;
+	padding: 50px 25px 0px 0px;
+	font-size: 14px;
+}
+
+#header a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header a:hover {
+	color: #8AC800
+}
+
+#menu a:hover {
+	color: #002537;
+    text-decoration: underline;
+}
+
+/* Header2 */
+
+#header2 {
+	width: 900px;
+	height: 88px;
+	margin: 0px auto;
+}
+
+/* Menu */
+
+#menu {
+	float: left;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 34px 0px 0px 0px;
+	list-style: none;
+	text-transform: lowercase;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	padding-left: 50px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+}
+
+#search form {
+	margin: 0px;
+	padding: 35px 80px 0px 0px;
+}
+
+#search fieldset {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#search input.text {
+	width: 160px;
+	background: none;
+	border: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #AEC38B;
+}
+
+#search input.button {
+	display: none;
+}
+
+/* Page */
+
+#page {
+	width: 846px;
+	margin: 0px auto;
+	padding: 40px 0px 0px 0px;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 583px;
+}
+
+.post {
+}
+
+.post .title {
+	height: 49px;
+	background: url(/images/img02.gif) no-repeat;
+}
+
+.post .title h2 {
+	float: left;
+	padding: 12px 0px 0px 24px;
+	font-size: 24px;
+	text-transform: lowercase;
+}
+
+.post .title h2 a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.post .title h2 a:hover {
+	color: #8AC800;
+}
+
+.post .title p {
+	float: right;
+	padding: 12px 24px 0px 0px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #343434;
+}
+
+.post .entry {
+	padding: 10px 0px 0px 0px;
+}
+
+.post .meta {
+	height: 70px;
+	clear: left;
+	margin: 0px 23px;
+	padding: 15px 0px 0px 0px;
+	border-top: 1px solid #262626;
+}
+
+.post .meta .credit {
+	float: left;
+}
+
+.post .meta .links {
+	float: right;
+}
+
+.post .meta .links .more {
+	padding-left: 17px;
+	background: url(/images/img05.gif) no-repeat left center;
+        font-size: 14px;
+        line-height: 180%;
+}
+
+.post .meta .links .comments {
+	padding-left: 19px;
+	background: url(/images/img04.gif) no-repeat left center;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 236px;
+}
+
+#sidebar ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#sidebar li {
+	background: url(/images/img03.gif) no-repeat;
+	padding: 0px 23px 20px 23px;
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+	padding: 8px 0px;
+	background: none;
+	border-bottom: 1px solid #262626;
+}
+
+#sidebar h2 {
+	margin: 0px;
+	padding: 14px 0px 30px 0px;
+	text-transform: lowercase;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer {
+}
+
+#footer p {
+	margin: 0px;
+	padding: 20px 0px;
+	text-align: center;
+	text-transform: lowercase;
+	color: #566D77;
+}
+
+#footer a {
+	color: #8097A1;
+}

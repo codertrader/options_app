@@ -1,0 +1,35 @@
+
+
+<% simple_form_for(@option) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.association :option_type, :include_blank => false, :label=>'Type', :as => :radio %>
+    <%= f.input :symbol, :placeholder => 'AAPL', :hint => 'For your reference, like AAPL' %>
+    <%= f.input :underlying, :hint => 'Price of the underlying security.' %>
+    <%= f.input :strike, :hint => 'Strike of the option' %>
+    <%= f.input :time, :hint => 'Time to maturity (in years)' %>
+    <%= f.input :interest, :hint => 'Annualized .0125 means 1.25%' %>
+    <%= f.input :sigma, :hint => 'Volatility .4875 means 48.75%' %>
+    <%= f.input :dividend, :hint => 'Annualized, if applicable.' %>
+  </div>
+
+  <div class="outputs">
+     <fieldset>
+     <legend>Outputs</legend>
+     <%= f.input :price %>
+     <%= f.input :delta %>
+     <%= f.input :gamma %>
+     <%= f.input :vega %>
+     </fieldset>    
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit, "Calculate Option" %>
+  </div>
+<% end %>
+
+
+<script type="text/javascript">
+$('option_model_symbol').focus();
+</script>
