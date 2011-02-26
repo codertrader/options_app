@@ -5,8 +5,8 @@ gem 'rails', '3.0.4'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'jdbc-sqlite3'
-gem 'activerecord-jdbcsqlite3-adapter'
+#gem 'jdbc-sqlite3'
+#gem 'activerecord-jdbcsqlite3-adapter'
 gem 'simple_form'
 gem 'options_library'
 

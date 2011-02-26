@@ -8638,3 +8638,27 @@ DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>
 Rendered option_models/_form.html.erb (289.0ms)
 Rendered option_models/index.html.erb within layouts/application (301.0ms)
 Completed 200 OK in 335ms (Views: 314.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/option_models/new" for 127.0.0.1 at Sat Feb 26 16:48:03 -0600 2011
+  Processing by OptionModelsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2348_2700 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (654.0ms)
+Rendered option_models/new.html.erb within layouts/application (680.0ms)
+Completed 200 OK in 849ms (Views: 702.0ms)
+
+
+Started POST "/option_models" for 127.0.0.1 at Sat Feb 26 16:48:16 -0600 2011
+  Processing by OptionModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F2IIXIADzNQs/py5A0G+ItYM1dACMH7gXl2IDdobN/c=", "option_model"=>{"option_type_id"=>"call", "symbol"=>"", "underlying"=>"0.0", "strike"=>"0.0", "time"=>"0.0", "interest"=>"0.0", "sigma"=>"0.0", "dividend"=>"0.0", "price"=>"0.0", "delta"=>"0.0", "gamma"=>"0.0", "vega"=>"0.0"}, "commit"=>"Calculate Option"}
+Numerical argument out of domain - Domain error - log
+Redirected to http://localhost:3000/option_models
+Completed 302 Found in 35ms
+
+
+Started GET "/option_models" for 127.0.0.1 at Sat Feb 26 16:48:16 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2366_2700 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (373.0ms)
+Rendered option_models/index.html.erb within layouts/application (391.0ms)
+Completed 200 OK in 438ms (Views: 412.0ms)
