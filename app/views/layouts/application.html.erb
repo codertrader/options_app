@@ -21,9 +21,9 @@
 	<div id="header2">
 		<div id="menu">
 			<ul>
-				<li><a href="#">Option::Calculator</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="/option_models">Option::Calculator</a></li>
+				<li><a href="/memos">About</a></li>
+				<!--li><a href="/contacts">Contact</a></li-->
 			</ul>
 		</div>
 		<!-- end #menu -->
@@ -47,19 +47,7 @@
 
 			<div id="page">
 				<div id="content">
-					<div class="post">
-						<div class="title">
-							<h2><a href="#">Option::Calculator</a><p>1.0.3</p></h2>
-						</div>
-						<div class="entry">
-						<%= yield %>
-
-						</div>
-						<div class="meta">
-							<p class="credit">Created by <a href="#">Dan Tylenda-Emmons</a> on February 20, 2011</p>
-							<div class="links"><a href="#" class="more">Read more</a></div>
-						</div>
-					</div>                    
+					<%= yield :content_div %>                    
 				</div>
 				<!-- end #content -->
 				<div id="sidebar">

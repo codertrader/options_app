@@ -1,0 +1,20 @@
+<%= content_for :content_div do %>
+
+    <% @memos.each do |memo| %>
+
+    <div class="post">
+        <div class="title">
+            <h2><a href="#"><%= memo.title %></a></h2><p>1.0.3</p>
+        </div>
+        <div class="entry">
+           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= memo.long %></p>
+        </div>
+        <div class="meta">
+            <p class="credit">Created by <a href="#">Dan Tylenda-Emmons</a> on <%= memo.created_date_as_text %></p>
+            <div class="links"><a href="#" class="more">Read more</a></div>
+        </div>
+    </div>
+
+    <% end %>
+<% end %>
+

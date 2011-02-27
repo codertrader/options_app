@@ -1,5 +1,8 @@
 OptionsApp::Application.routes.draw do
+
   resources :option_models
+  resources :memos
+  # todo resources :contacts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -8670,3 +8670,424 @@ DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>
 Rendered option_models/_form.html.erb (651.0ms)
 Rendered option_models/index.html.erb within layouts/application (672.0ms)
 Completed 200 OK in 827ms (Views: 692.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 01:23:14 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2348_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (561.0ms)
+Rendered option_models/index.html.erb within layouts/application (581.0ms)
+Completed 200 OK in 874ms (Views: 603.0ms)
+
+
+Started POST "/option_models" for 127.0.0.1 at Sun Feb 27 01:23:18 -0600 2011
+  Processing by OptionModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YMC6op+Q+5lRrvUJ3v/DPxKJVoZABsXNt0CSt3rxlYY=", "option_model"=>{"option_type_id"=>"call", "symbol"=>"", "underlying"=>"0.0", "strike"=>"0.0", "time"=>"0.0", "interest"=>"0.0", "sigma"=>"0.0", "dividend"=>"0.0", "price"=>"0.0", "delta"=>"0.0", "gamma"=>"0.0", "vega"=>"0.0"}, "commit"=>"Calculate Option"}
+Numerical argument out of domain - Domain error - log
+Redirected to http://localhost:3000/option_models
+Completed 302 Found in 31ms
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 01:23:18 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2366_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (341.0ms)
+Rendered option_models/index.html.erb within layouts/application (361.0ms)
+Completed 200 OK in 401ms (Views: 375.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:23:25 -0600 2011
+  Processing by MemosController#index as HTML
+Completed   in 19ms
+
+SyntaxError (/Users/danger/dev/OptionsApp/app/models/memo.rb:23: syntax error, unexpected ','
+
+      all << Memo.new(:title=>"About Me", "Short summary of who I am and what I do.", ABOUT_ME)]
+                                                                                    ^):
+  app/models/memo.rb:454:in `load_file'
+  app/controllers/memos_controller.rb:4:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (57.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:26:59 -0600 2011
+  Processing by MemosController#index as HTML
+Completed   in 18ms
+
+SyntaxError (/Users/danger/dev/OptionsApp/app/models/memo.rb:23: syntax error, unexpected tRBRACK
+
+      all << Memo.new(:title=>"About Me", :short=>"Short summary of who I am and what I do.", :long=>ABOUT_ME)]
+                                                                                                              ^):
+  app/models/memo.rb:454:in `load_file'
+  app/controllers/memos_controller.rb:4:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (33.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:27:11 -0600 2011
+  Processing by MemosController#index as HTML
+Completed   in 21ms
+
+NameError (uninitialized constant ABOUT_ME):
+  app/models/memo.rb:23:in `all'
+  app/controllers/memos_controller.rb:4:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:27:32 -0600 2011
+  Processing by MemosController#index as HTML
+Completed   in 17ms
+
+NameError (uninitialized constant ABOUT_ME):
+  app/models/memo.rb:23:in `all'
+  app/controllers/memos_controller.rb:4:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:27:35 -0600 2011
+  Processing by MemosController#index as HTML
+Completed   in 15ms
+
+NameError (uninitialized constant ABOUT_ME):
+  app/models/memo.rb:23:in `all'
+  app/controllers/memos_controller.rb:4:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (23.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:28:30 -0600 2011
+  Processing by MemosController#index as HTML
+Completed   in 18ms
+
+NameError (undefined local variable or method `short=' for #<Memo:0x11ba4552 @title="About Me">):
+  app/models/memo.rb:33:in `initialize'
+  app/models/memo.rb:23:in `all'
+  app/controllers/memos_controller.rb:4:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:30:00 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 47ms (Views: 30.0ms)
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 01:30:08 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2458_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (357.0ms)
+Rendered option_models/index.html.erb within layouts/application (371.0ms)
+Completed 200 OK in 405ms (Views: 383.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:30:09 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 38ms (Views: 22.0ms)
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 01:30:11 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2478_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (306.0ms)
+Rendered option_models/index.html.erb within layouts/application (321.0ms)
+Completed 200 OK in 362ms (Views: 337.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:30:12 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 19.0ms)
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 01:30:12 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2498_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (332.0ms)
+Rendered option_models/index.html.erb within layouts/application (346.0ms)
+Completed 200 OK in 389ms (Views: 366.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:30:13 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 19.0ms)
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 01:30:14 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2518_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (286.0ms)
+Rendered option_models/index.html.erb within layouts/application (298.0ms)
+Completed 200 OK in 331ms (Views: 310.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:30:16 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 34ms (Views: 20.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:30:17 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 34ms (Views: 23.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 01:30:18 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 39ms (Views: 27.0ms)
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 01:30:19 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2554_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (278.0ms)
+Rendered option_models/index.html.erb within layouts/application (290.0ms)
+Completed 200 OK in 320ms (Views: 301.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 11:23:39 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2348_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (585.0ms)
+Rendered option_models/index.html.erb within layouts/option_models (595.0ms)
+Completed 200 OK in 882ms (Views: 610.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 11:30:39 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2360_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (344.0ms)
+Rendered option_models/index.html.erb within layouts/application (366.0ms)
+Completed 200 OK in 412ms (Views: 381.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 11:32:08 -0600 2011
+  Processing by OptionModelsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_option_models__form_html_erb___46249167_2374_1071 at /Users/danger/dev/OptionsApp/app/views/option_models/_form.html.erb:3)
+Rendered option_models/_form.html.erb (383.0ms)
+Rendered option_models/_option_calculator.html.erb (392.0ms)
+Rendered option_models/index.html.erb within layouts/application (419.0ms)
+Completed 200 OK in 459ms (Views: 436.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 11:32:32 -0600 2011
+  Processing by OptionModelsController#index as HTML
+Rendered option_models/_form.html.erb (424.0ms)
+Rendered option_models/_option_calculator.html.erb (432.0ms)
+Rendered option_models/index.html.erb within layouts/application (446.0ms)
+Completed 200 OK in 498ms (Views: 468.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 11:33:06 -0600 2011
+  Processing by OptionModelsController#index as HTML
+Rendered option_models/_form.html.erb (348.0ms)
+Rendered option_models/_option_calculator.html.erb (355.0ms)
+Rendered option_models/index.html.erb within layouts/application (371.0ms)
+Completed 200 OK in 407ms (Views: 384.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 11:33:11 -0600 2011
+  Processing by OptionModelsController#index as HTML
+Rendered option_models/_form.html.erb (369.0ms)
+Rendered option_models/_option_calculator.html.erb (374.0ms)
+Rendered option_models/index.html.erb within layouts/application (389.0ms)
+Completed 200 OK in 440ms (Views: 406.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Feb 27 11:33:51 -0600 2011
+  Processing by OptionModelsController#index as HTML
+Rendered option_models/_form.html.erb (372.0ms)
+Rendered option_models/_option_calculator.html.erb (379.0ms)
+Rendered option_models/index.html.erb within layouts/application (396.0ms)
+Completed 200 OK in 442ms (Views: 411.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:33:54 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (17.0ms)
+Completed   in 48ms
+
+ActionView::Template::Error (Missing partial memos/form with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/danger/dev/OptionsApp/app/views"):
+    4:             <h2><a href="#">About::Me</a><p>1.0.3</p></h2>
+    5:         </div>
+    6:         <div class="entry">
+    7:         <%= render 'form' %>
+    8:         </div>
+    9:         <div class="meta">
+    10:             <p class="credit">Created by <a href="#">Dan Tylenda-Emmons</a> on February 20, 2011</p>
+  app/views/memos/index.html.erb:7:in `_app_views_memos_index_html_erb___1289513298_2438_0'
+  app/views/memos/index.html.erb:1:in `_app_views_memos_index_html_erb___1289513298_2438_0'
+  app/controllers/memos_controller.rb:6:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:34:12 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 35ms (Views: 22.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:34:25 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 37ms (Views: 24.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:35:54 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 32ms (Views: 20.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:39:41 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 44ms (Views: 26.0ms)
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 11:39:46 -0600 2011
+  Processing by OptionModelsController#index as HTML
+Rendered option_models/_form.html.erb (287.0ms)
+Rendered option_models/_option_calculator.html.erb (291.0ms)
+Rendered option_models/index.html.erb within layouts/application (302.0ms)
+Completed 200 OK in 336ms (Views: 313.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:39:59 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 37ms (Views: 26.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:41:18 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 40ms (Views: 26.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:41:32 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 42ms (Views: 29.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:42:17 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 38ms (Views: 25.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:42:32 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 32ms (Views: 22.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:45:56 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (12.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (undefined method `created_date_as_text' for #<Memo:0x7db4aa68>):
+    10:            <p><%= memo.long %></p>
+    11:         </div>
+    12:         <div class="meta">
+    13:             <p class="credit">Created by <a href="#">Dan Tylenda-Emmons</a> on <%= memo.created_date_as_text %></p>
+    14:             <div class="links"><a href="#" class="more">Read more</a></div>
+    15:         </div>
+    16:     </div>
+  app/views/memos/index.html.erb:13:in `_app_views_memos_index_html_erb___1289513298_2538_0'
+  app/views/memos/index.html.erb:3:in `_app_views_memos_index_html_erb___1289513298_2538_0'
+  app/views/memos/index.html.erb:1:in `_app_views_memos_index_html_erb___1289513298_2538_0'
+  app/controllers/memos_controller.rb:6:in `index'
+
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.0ms)
+Rendered /Users/danger/Downloads/jruby-1.6.0.RC1/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:46:31 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 32ms (Views: 20.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:46:58 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 33ms (Views: 22.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:47:17 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 31ms (Views: 21.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:47:32 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 45ms (Views: 28.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:47:49 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 37ms (Views: 26.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:48:34 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 19.0ms)
+
+
+Started GET "/memos" for 127.0.0.1 at Sun Feb 27 11:49:22 -0600 2011
+  Processing by MemosController#index as HTML
+Rendered memos/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 35ms (Views: 25.0ms)
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 11:49:36 -0600 2011
+  Processing by OptionModelsController#index as HTML
+Rendered option_models/_form.html.erb (282.0ms)
+Rendered option_models/_option_calculator.html.erb (286.0ms)
+Rendered option_models/index.html.erb within layouts/application (296.0ms)
+Completed 200 OK in 326ms (Views: 306.0ms)
+
+
+Started POST "/option_models" for 127.0.0.1 at Sun Feb 27 11:49:40 -0600 2011
+  Processing by OptionModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ei2X2N/6nnZVaX6YTuNtZLXSEaLo8biOqhh7l4M/6xk=", "option_model"=>{"option_type_id"=>"call", "symbol"=>"", "underlying"=>"0.0", "strike"=>"0.0", "time"=>"0.0", "interest"=>"0.0", "sigma"=>"0.0", "dividend"=>"0.0", "price"=>"0.0", "delta"=>"0.0", "gamma"=>"0.0", "vega"=>"0.0"}, "commit"=>"Calculate Option"}
+Numerical argument out of domain - Domain error - log
+Redirected to http://localhost:3000/option_models
+Completed 302 Found in 25ms
+
+
+Started GET "/option_models" for 127.0.0.1 at Sun Feb 27 11:49:40 -0600 2011
+  Processing by OptionModelsController#index as HTML
+Rendered option_models/_form.html.erb (277.0ms)
+Rendered option_models/_option_calculator.html.erb (281.0ms)
+Rendered option_models/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 327ms (Views: 308.0ms)
